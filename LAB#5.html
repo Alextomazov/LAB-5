@@ -99,6 +99,11 @@
         background-color: #e5e5e5;
     }
 
+    .carousel-indicators button {
+        width: 10px !important;
+        height: 10px !important;
+    }
+
 </style>
 <body>
 <header>
@@ -118,15 +123,50 @@
 </header>
 
 <main>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-info bg-gradient">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 fw-normal">Punny headline</h1>
-            <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this
-                example based on Apple’s marketing pages.</p>
-            <a class="btn btn-outline-primary" href="#">Coming soon</a>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-info bg-gradient">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <h1 class="display-4 fw-normal">Punny headline</h1>
+                        <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this
+                            example based on Apple’s marketing pages.</p>
+                        <a class="btn btn-outline-primary" href="#">Coming soon</a>
+                    </div>
+                    <div class="product-device shadow-sm d-none d-md-block"></div>
+                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-info bg-gradient">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <h1 class="display-4 fw-normal">Punny headline</h1>
+                        <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this
+                            example based on Apple’s marketing pages.</p>
+                        <a class="btn btn-outline-primary" href="#">Coming soon</a>
+                    </div>
+                    <div class="product-device shadow-sm d-none d-md-block"></div>
+                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-info bg-gradient">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <h1 class="display-4 fw-normal">Punny headline</h1>
+                        <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this
+                            example based on Apple’s marketing pages.</p>
+                        <a class="btn btn-outline-primary" href="#">Coming soon</a>
+                    </div>
+                    <div class="product-device shadow-sm d-none d-md-block"></div>
+                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="container marketing text-center">
@@ -205,6 +245,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>
